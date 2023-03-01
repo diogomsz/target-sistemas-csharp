@@ -8,32 +8,23 @@ namespace target_sistemas.questao2
 {
     public class Fibonacci
     {
-        public int Fibo(int n)
+        public static bool Fibo(int n)
         {
-            if (n == 0 || n == 1)
-            {
-                return n;
-            }
-            else
-            {
-                return Fibo(n - 1) + Fibo(n - 2);
-            }
-        }
+            int x = 1, y = 0, z = 0;
 
-        public void FindValueFibo(int value)
-        {
-            for(int i = 0; i < value; value--)
+            while(n >= z)
             {
-                if(value == Fibo(value))
+                z = x + y;
+                Console.WriteLine(z);
+                if (z == n)
                 {
-                    Console.WriteLine($"O valor {value} pertence à sequência");
-                } else
-                {
-                    Console.WriteLine($"O valor {value} não pertence à sequência");
+                    return true;
                 }
+                y = x;
+                x = z;
             }
+
+            return false;
         }
     }
-
-
 }
