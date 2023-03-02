@@ -10,7 +10,6 @@
 
   <ItemGroup>
     <Folder Include="questao5\" />
-    <Folder Include="questao4\" />
   </ItemGroup>
 
 </Project>
