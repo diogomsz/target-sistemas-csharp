@@ -7,6 +7,15 @@ internal class Program
 {
     private static void Main(string[] args)
     {
+        Q1();
+        Console.ReadKey();
+        Console.Clear();
+        Q2();
+        Console.ReadKey();
+        Console.Clear();
+        Q3();
+        Console.ReadKey();
+        Console.Clear();
         Q4();
     }
 
