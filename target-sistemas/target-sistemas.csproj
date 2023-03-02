@@ -11,7 +11,6 @@
   <ItemGroup>
     <Folder Include="questao5\" />
     <Folder Include="questao4\" />
-    <Folder Include="questao3\" />
   </ItemGroup>
 
 </Project>
