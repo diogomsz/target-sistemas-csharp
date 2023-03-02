@@ -19,19 +19,19 @@ public class InverteTexto
     private static string[] InvertendoTexto(string texto)
     {
         string aux;
-        string[] text = texto.ToCharArray().Select(c => c.ToString()).ToArray();
+        string[] vetorTexto = texto.ToCharArray().Select(c => c.ToString()).ToArray();
         int i = 0;
         int j = texto.Length - 1;
 
         while(i < j)
         {
-            aux = text[i];
-            text[i] = text[j];
-            text[j] = aux;
+            aux = vetorTexto[i];
+            vetorTexto[i] = vetorTexto[j];
+            vetorTexto[j] = aux;
             i++;
             j--;
         }
 
-        return text;
+        return vetorTexto;
     }
 }
