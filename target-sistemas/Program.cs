@@ -1,6 +1,7 @@
 ﻿using target_sistemas.questao2;
 using target_sistemas.questao3;
 using target_sistemas.questao4;
+using target_sistemas.questao5;
 
 internal class Program
 {
@@ -36,5 +37,14 @@ internal class Program
         {
             Console.WriteLine($"Estado: {x.estado} - Porcentagem de representação: {x.porcentagem:P}");
         });
+    }
+
+    public static void Q4()
+    {
+        Console.Write("Digite uma frase ou palavra: ");
+        string texto = Console.ReadLine();
+
+        string textoInvertido = InverteTexto.RetornaTextoInvertido(texto);
+        Console.WriteLine($"Texto invertido: {textoInvertido}");
     }
 }
